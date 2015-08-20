@@ -13,11 +13,16 @@ $().ready(function()
 	{
 	$('#test').click(function() {
 		alert('hogehogeeeee');
+
+		window.location.href = 'pebblejs:///close';
 	});
 
 
 	$("#b-cancel").click(function(){
 		//console.log("Canceling");
+
+		alert('concel button.');
+
 		//document.location = "pebblejs://close";
 		window.location.href = 'pebblejs:///close';
 	});

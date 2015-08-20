@@ -6,6 +6,8 @@ function saveOptions() {
 	//var colorValue = parseInt($('#color').val());
 	//var sendValue =[colorValue];
 	var sendValue = [$('#ifttt_url').val()];
+	alert(sendValue);
+	alert(sendValue[0]);
 	return sendValue;
 }
 
@@ -32,7 +34,7 @@ $().ready(function()
 </select> -->
 </p>
 IFTTT(IF) MAKER URI
-<p><input type="text" id="ifttt_url" value =""></p>
+<p><input type="text" id="ifttt_url"></p>
 <p><input type="submit" id="b-save" value="save"></input></p>
 <p><input type="submit" id="b-cancel" value="cancel"></input></p>
 </form>

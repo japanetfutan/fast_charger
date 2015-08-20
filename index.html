@@ -3,8 +3,9 @@
 <form>
 <script>
 function saveOptions() {
-	var colorValue = parseInt($('#color').val());
-	var sendValue =[colorValue];
+	//var colorValue = parseInt($('#color').val());
+	//var sendValue =[colorValue];
+	var sendValue = [$('#ifttt_url').val()];
 	return sendValue;
 }
 
@@ -23,13 +24,15 @@ $().ready(function()
 });
 </script>
 <p>
-<select id="color" size="4">
+<!-- <select id="color" size="4">
 	<option value="0" selected>white</option>
 	<option value="1">black</option>
 	<option value="2">blue</option>
 	<option value="3">red</option>
-</select>
+</select> -->
 </p>
+IFTTT(IF) MAKER URI
+<p><input type="text" id="ifttt_url" value =""></p>
 <p><input type="submit" id="b-save" value="save"></input></p>
 <p><input type="submit" id="b-cancel" value="cancel"></input></p>
 </form>

@@ -16,8 +16,7 @@ $().ready(function()
 	});
 
 
-	$("#b-cancel").click(function()
-		{
+	$("#b-cancel").click(function(){
 		//console.log("Canceling");
 		document.location = "pebblejs://close";
 	});
@@ -26,8 +25,11 @@ $().ready(function()
 
 		alert($('#ifttt_url').val());
 
-		var location = "pebblejs://close#" + encodeURIComponent(JSON.stringify(saveOptions()));
-		document.location = location;
+		var location_uri = "pebblejs://close#" + encodeURIComponent(JSON.stringify(saveOptions()));
+
+		alert(location_uri);
+
+		document.location = location_uri;
 	});
 });
 </script>

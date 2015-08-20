@@ -6,8 +6,6 @@ function saveOptions() {
 	//var colorValue = parseInt($('#color').val());
 	//var sendValue =[colorValue];
 	var sendValue = [$('#ifttt_url').val()];
-	alert(sendValue);
-	alert(sendValue[0]);
 	return sendValue;
 }
 
@@ -15,11 +13,14 @@ $().ready(function()
 	{
 	$("#b-cancel").click(function()
 		{
-		console.log("Canceling");
+		//console.log("Canceling");
 		document.location = "pebblejs://close";
 	});
 	$("#b-save").click(function() {
-		console.log("Save");
+		//console.log("Save");
+
+		alert($('#ifttt_url').val());
+
 		var location = "pebblejs://close#" + encodeURIComponent(JSON.stringify(saveOptions()));
 		document.location = location;
 	});

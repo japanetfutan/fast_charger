@@ -19,7 +19,7 @@ $().ready(function()
 	$("#b-cancel").click(function(){
 		//console.log("Canceling");
 		//document.location = "pebblejs://close";
-		location.href = 'pebblejs://close';
+		window.location.href = 'pebblejs:///close';
 	});
 	$("#b-save").click(function() {
 		//console.log("Save");
@@ -27,7 +27,7 @@ $().ready(function()
 		alert($('#ifttt_url').val());
 
 		//var location_uri = "pebblejs://close#" + encodeURIComponent(JSON.stringify(saveOptions()));
-		var location_uri = 'pebblejs://close#' + JSON.stringify(saveOptions());
+		var location_uri = 'pebblejs:///close#' + JSON.stringify(saveOptions());
 
 		alert(location_uri);
 

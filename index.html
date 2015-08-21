@@ -19,10 +19,10 @@
 	<option value="3">red</option>
 </select> -->
 </p>
-IFTTT(IF) MAKER URI
+&nbsp;&nbsp;IFTTT(IF) MAKER URL
 <p><input type="text" id="ifttt_url" style="width: 550px"></p>
 
-<p><input type="button" id="test" value="test"></p>
+<!-- <p><input type="button" id="test" value="test"></p> -->
 
 <p><input type="submit" id="b-save" value="save"></input></p>
 <p><input type="submit" id="b-cancel" value="cancel"></input></p>
@@ -39,31 +39,19 @@ function saveOptions() {
 
 $().ready(function()
 	{
-	$('#test').click(function() {
-		alert('閉じる');
-
-		window.location.href = 'pebblejs:///close';
-	});
-
+	// $('#test').click(function() {
+	// 	window.location.href = 'pebblejs:///close';
+	// });
 
 	$("#b-cancel").click(function(){
 		//console.log("Canceling");
-
-		alert('concel button.');
-
-		//document.location = "pebblejs://close";
-		window.location.href = 'pebblejs:///close';
+		document.location = "pebblejs://close";
+		//window.location.href = 'pebblejs:///close';
 	});
 	$("#b-save").click(function() {
 		//console.log("Save");
-
-		alert($('#ifttt_url').val());
-
 		var location_uri = "pebblejs://close#" + encodeURIComponent(JSON.stringify(saveOptions()));
 		//var location_uri = 'pebblejs:///close#' + JSON.stringify(saveOptions());
-
-		alert(location_uri);
-
 		document.location = location_uri;
 	});
 });

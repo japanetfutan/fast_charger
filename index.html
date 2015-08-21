@@ -32,13 +32,15 @@ function saveOptions() {
 	//var colorValue = parseInt($('#color').val());
 	//var sendValue =[colorValue];
 	var sendValue = [$('#ifttt_url').val()];
+	alert('sendValue' + sendValue);
+
 	return sendValue;
 }
 
 $().ready(function()
 	{
 	$('#test').click(function() {
-		alert('hogehogeeeee');
+		alert('閉じる');
 
 		window.location.href = 'pebblejs:///close';
 	});

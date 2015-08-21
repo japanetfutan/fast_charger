@@ -32,8 +32,11 @@ function saveOptions() {
 	return sendValue;
 }
 
-$().ready(function()
-	{
+$().ready(function(){
+	query = window.location.search;
+	alert(query);
+
+
 	$("#b-cancel").click(function(){
 		//console.log("Canceling");
 		document.location = "pebblejs://close";

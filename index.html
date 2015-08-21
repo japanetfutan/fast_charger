@@ -21,9 +21,6 @@
 </p>
 &nbsp;&nbsp;IFTTT(IF) MAKER URL
 <p><input type="text" id="ifttt_url" style="width: 550px"></p>
-
-<!-- <p><input type="button" id="test" value="test"></p> -->
-
 <p><input type="submit" id="b-save" value="save"></input></p>
 <p><input type="submit" id="b-cancel" value="cancel"></input></p>
 </form>
@@ -32,26 +29,18 @@ function saveOptions() {
 	//var colorValue = parseInt($('#color').val());
 	//var sendValue =[colorValue];
 	var sendValue = [$('#ifttt_url').val()];
-	alert('sendValue' + sendValue);
-
 	return sendValue;
 }
 
 $().ready(function()
 	{
-	// $('#test').click(function() {
-	// 	window.location.href = 'pebblejs:///close';
-	// });
-
 	$("#b-cancel").click(function(){
 		//console.log("Canceling");
 		document.location = "pebblejs://close";
-		//window.location.href = 'pebblejs:///close';
 	});
 	$("#b-save").click(function() {
 		//console.log("Save");
 		var location_uri = "pebblejs://close#" + encodeURIComponent(JSON.stringify(saveOptions()));
-		//var location_uri = 'pebblejs:///close#' + JSON.stringify(saveOptions());
 		document.location = location_uri;
 	});
 });

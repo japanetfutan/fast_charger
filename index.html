@@ -34,6 +34,9 @@ function saveOptions() {
 
 $().ready(function(){
 	query = window.location.search;
+	query = query.substr(1);
+	query = query.replace('%22','');
+	//JSON.parse(query);
 	alert(query);
 
 

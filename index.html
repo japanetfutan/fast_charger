@@ -34,12 +34,8 @@ function saveOptions() {
 
 $().ready(function(){
 	var query = window.location.search;
-	//console.log(query);
-
 	query = query.substr(1);
-	//query = query.replace('%22','').replace('"','');
-	alert(query);
-
+	$('#ifttt_url').val(query);
 
 	$("#b-cancel").click(function(){
 		//console.log("Canceling");

@@ -33,10 +33,11 @@ function saveOptions() {
 }
 
 $().ready(function(){
-	query = window.location.search;
+	var query = window.location.search;
+	//console.log(query);
+
 	query = query.substr(1);
 	//query = query.replace('%22','').replace('"','');
-	query = JSON.parse(query);
 	alert(query);
 
 

@@ -19,7 +19,27 @@
 	<option value="3">red</option>
 </select> -->
 </p>
-&nbsp;&nbsp;IFTTT(IF) MAKER URL
+<h2>&nbsp;&nbsp;IFTTT(IF) MAKER URL</h2>
+<p><a href="#" id="h">How to settings notification to your smartphone?</a></p>
+<div id="t">
+https://ifttt.com/maker
+Receive a web request
+Crate a new Recipe
+this -> maker -> Receive a web request
+Event Name -> 何でもいい
+that -> iOS Notifications OR Android Notification -> Send a notification
+Notification : "{{EventName}}" -> Create
+
+https://ifttt.com/maker
+Your secret key is:XXXXXXXXXXXXXXXXXXXX
+
+Setting URL
+https://maker.ifttt.com/trigger/{event}/with/key/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+
+</div>
+
+<p>&nbsp;&nbsp;IFTTT(IF) MAKER URL</p>
 <p><input type="text" id="ifttt_url" style="width: 550px"></p>
 <p><input type="submit" id="b-save" value="save"></input></p>
 <p><input type="submit" id="b-cancel" value="cancel"></input></p>
@@ -37,6 +57,9 @@ $().ready(function(){
 	query = query.substr(1);
 	$('#ifttt_url').val(query);
 
+	$('#h').click(function(){
+		$('#t').toggle("fast");
+	});
 	$("#b-cancel").click(function(){
 		//console.log("Canceling");
 		document.location = "pebblejs://close";

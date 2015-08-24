@@ -69,6 +69,10 @@ $().ready(function(){
 	query = query.substr(1);
 	$('#ifttt_url').val(query);
 
+	var w = $(window).width()-10;
+	$('img').css('width:'+w+'px');
+
+
 	$('#h').click(function(){
 		$('#t').toggle("fast");
 	});

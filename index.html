@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+	<link rel="stylesheet" href="./css/css.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js" /></script>
 	<title>Fast charger setting</title>
@@ -19,8 +20,8 @@
 	<option value="3">red</option>
 </select> -->
 </p>
-<h2>&nbsp;&nbsp;IFTTT(IF) MAKER URL</h2>
-<p>&nbsp;&nbsp;<a href="#" id="h">How to settings notification to your smartphone?</a></p>
+<h2>IFTTT(IF) MAKER URL</h2>
+<p><a href="#" id="h">How to settings notification to your smartphone?</a></p>
 <div id="t" style="display: none">
 https://ifttt.com/maker
 
@@ -28,20 +29,22 @@ https://ifttt.com/maker
 Receive a web request
 Crate a new Recipe
 this -> maker -> Receive a web request
-Event Name -> 何でもいい
+Event Name -> Input Optional Event Name
 that -> iOS Notifications OR Android Notification -> Send a notification
 Notification : "{{EventName}}" -> Create
 
 https://ifttt.com/maker
 Your secret key is:XXXXXXXXXXXXXXXXXXXX
 
-Setting URL
-https://maker.ifttt.com/trigger/{event}/with/key/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 </pre>
+<p>
+Setting URL:
+https://maker.ifttt.com/trigger/<b>EVENT_NAME<b>/with/key/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+</p>
 
 </div>
 
-<p>&nbsp;&nbsp;IFTTT(IF) MAKER URL</p>
+<h3>IFTTT(IF) MAKER URL</h3>
 <p><input type="text" id="ifttt_url" style="width: 550px"></p>
 <p><input type="submit" id="b-save" value="save"></input></p>
 <p><input type="submit" id="b-cancel" value="cancel"></input></p>

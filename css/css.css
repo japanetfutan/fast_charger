@@ -1,5 +1,8 @@
 h2,h3,p,div{
-	margin-left: 15px
+	margin-left: 15px;
+	margin-right: 15px;
 }
-pre{margin-left: 10px;}
+pre{margin-left: 10px;
+	margin-right: 10px;
+}
 

@@ -23,7 +23,7 @@
 <h2>Setting IFTTT(IF) MAKER URL</h2>
 <p>When URL set at the time of full charge of Pebble Time Notify your smartphone.</p>
 <p>* The setting must have an account and the app of IFTTT(IF).</p>
-<p><a href="#" id="h">How to notify your smartphone.</a></p>
+<p><i id="h" class="icon-circle-arrow-down">How to notify your smartphone.</i></p>
 <div id="t" style="display: none">
 <br />
 <a href="https://ifttt.com/maker">https://ifttt.com/maker</a>
@@ -74,6 +74,7 @@ $().ready(function(){
 
 	$('#h').click(function(){
 		$('#t').toggle("fast");
+		$("i",this).toggleClass("icon-circle-arrow-up icon-circle-arrow-down");
 	});
 	$("#b-cancel").click(function(){
 		//console.log("Canceling");

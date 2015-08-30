@@ -5,3 +5,11 @@ a,h2,h3,p,div,img{
 pre{margin-left: 10px;
 	margin-right: 10px;
 }
+
+.small{
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -o-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}

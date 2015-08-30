@@ -7,9 +7,5 @@ pre{margin-left: 10px;
 }
 
 .small{
-  -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-  -o-text-size-adjust: 100%;
-  text-size-adjust: 100%;
+  font-size: 50%;
 }

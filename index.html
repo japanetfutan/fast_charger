@@ -69,7 +69,9 @@ function saveOptions() {
 $().ready(function(){
 	var query = window.location.search;
 	query = query.substr(1);
-	if(query){
+	if(!query){
+		$('#ifttt_url').val('');
+	}else{
 		$('#ifttt_url').val(query);
 	}
 	var w = $(window).width()-50;
